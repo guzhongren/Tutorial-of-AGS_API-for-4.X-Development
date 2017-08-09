@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <title>Geo_project</title>
+  <script type="text/javascript">
+        //配置扩展解模块析引用路径
+        dojoConfig = {
+            parseOnLoad: true,
+            async:true,
+            packages:[{
+              name: "extras",
+              location:location.pathname.replace(/\/[^/]+$/, "") + "/extras"//聚合效果拓展类引用
+            }]
+            // paths: {
+            //     extras: location.pathname.replace(/\/[^/]+$/, "") + "/extras"//聚合效果拓展类引用
+            // }
+        };
+    </script>
+  <link rel="stylesheet" href="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/dijit/themes/claro/claro.css"
+  />
+  <link rel="stylesheet" href="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/esri/css/main.css" />
+  <script src="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/dojo/dojo.js"></script>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  
+  <script src="../src/geo_project/geo_project.js"></script>
+</head>
+
+<body class="claro">
+  <div id="viewDiv"></div>
+</body>
+
+</html>

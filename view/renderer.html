@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Renderer</title>
+    <link rel="stylesheet" href="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/dijit/themes/claro/claro.css"
+    />
+    <link rel="stylesheet" href="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/esri/css/main.css" />
+    <script src="https://localhost:3443/arcgis_js_v44_api/arcgis_js_api/library/4.4/dojo/dojo.js"></script>
+    <script src="../libs/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="../src/renderer/renderer.js"></script>
+</head>
+
+<body class="claro">
+    <div id="viewDiv">
+        <div class="container-fluid" style="position: fixed; top:20px;">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class=" col-md-6">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">渲染器（Renderer）</div>
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li role="presentation" class="active"><a href="#uniqueValue" data-toggle="tab">唯一值渲染</a></li>
+                                <li role="presentation"><a href="#classBreaks" data-toggle="tab">分级渲染</a></li>
+                                <li role="presentation"><a href="#multValue" data-toggle="tab">多属性混合渲染</a></li>
+                            </ul>
+                            <div id="renderContent" class="tab-content">
+                                <div class="tab-pane fade in active" id="uniqueValue">
+                                    <select class="form-control">
+                                        <option value="GB">GB</option>
+                                    </select>
+                                    <button type="button" id="btnUnique" class="btn btn-danger">唯一值渲染</button>
+                                </div>
+                                <div class="tab-pane fade" id="classBreaks">
+                                    <select id="classBreaks" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <button type="button" id="btnClass" class="btn btn-danger">分级渲染</button>
+                                </div>
+                                <div class="tab-pane fade" id="multValue">
+                                    <button type="button"  id= "btnMulti" class="btn btn-danger">混合渲染</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
