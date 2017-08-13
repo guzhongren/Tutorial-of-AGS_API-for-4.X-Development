@@ -17,7 +17,9 @@ require([
 
     let gpUrl = "https://192.168.33.44:6443/arcgis/rest/services/geocon/clipModal/GPServer/clipModal";
     let featureUrl = "https://192.168.33.44:6443/arcgis/rest/services/geocon/gs_xzqh_city_feature/FeatureServer/0";
+    // 实例化GP
     let gp = new Geoprocessor(gpUrl);
+
     var map = new Map({
         basemap: "osm"
     });
@@ -31,21 +33,21 @@ require([
     let featureLayer = new FeatureLayer({
         url: featureUrl
     });
-    
+    map.add(featureLayer);
 
     clipFeature = new FeatureSet({
         spatialReference: featureLayer.spatialReference.wkid
     });
-    map.add(featureLayer);
+    
 
     let graphicsLayer = new GraphicsLayer({
         id: "tempGraphicsLayer"
     });
     map.add(graphicsLayer);
-    on(dom.byId("draw-button"), 'click', (evt) => {
-        // doGP();
+    // on(dom.byId("draw-button"), 'click', (evt) => {
+    //     // doGP();
 
-    });
+    // });
     // 自定义区域工具
     var drawConfig = {
         drawingSymbol: new SimpleFillSymbol({
@@ -282,7 +284,7 @@ require([
         let graphics = [];
         features.map((feature) => {
             feature.symbol = simpleFillSymbol;
-            graphics.push(feature);
+            // graphics.push(feature);
             graphicsLayer.graphics.add(feature);
         });
     }

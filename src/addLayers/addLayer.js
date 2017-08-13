@@ -30,12 +30,18 @@ require([
     })
 
     // 给添加图层按钮添加监听
-    $("#btnAddDynamicLayer").on("click", () => {
+    // $("#btnAddDynamicLayer").on("click", () => {
+    //     $("#myModal").modal({
+    //         keyboard: true
+    //     });
+    //     // domAttr.get(dom.byId("serviceUrl"), "value","");
+    // });
+
+    on(dom.byId("btnAddDynamicLayer"), "click", ()=>{
         $("#myModal").modal({
             keyboard: true
         });
-        // domAttr.get(dom.byId("serviceUrl"), "value","");
-    });
+    })
     // 点击添加图层
     on(dom.byId("btnAddLayerToMap"), "click", () => {
         let serviceValue = domAttr.get(dom.byId("serviceUrl"), "value");

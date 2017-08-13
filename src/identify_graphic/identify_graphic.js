@@ -102,7 +102,7 @@ require([
                 feature.popupTemplate = poputTemplate;
                 feature.symbol = simpleFillSymbol;
                 tempGraphicsLayer.graphics.add(feature);
-                console.log(tempGraphicsLayer);
+                // console.log(tempGraphicsLayer);
                 return feature;
             });
         }).then((resp) => {
