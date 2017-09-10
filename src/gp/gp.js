@@ -265,10 +265,8 @@ require([
                         renderGPResult(data.value.features);
                     });
                 }
-            }).then((err) => {
-                if (err) {
-                    console.error(err);
-                }
+            },(err) => {
+                err? console.log(err) : null
             })
     }
     let simpleFillSymbol = new SimpleFillSymbol({
