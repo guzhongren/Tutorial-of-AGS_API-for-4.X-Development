@@ -14,7 +14,7 @@ https://github.com/guzhongren/Tutorial-of-AGS_API-for-4.X-Development.git
 ```
 ## 配置AGS API
 
-在[官网](https://developers.arcgis.com/javascript/latest/guide/get-api/index.html)下载4.X版本的API,解压后将4.X目录下的所有文件拷贝至Web-Root/arcgis_js_api目录下；按照官方文档修改init.js和dojo.js中的路径，本文修改如下,将
+在[官网](https://developers.arcgis.com/javascript/latest/guide/get-api/index.html)下载4.X版本的API,解压后将4.X目录下的所有文件拷贝至此git项目/arcgis_js_api(需新建)目录下；按照官方文档修改init.js和dojo.js中的路径，本文修改如下,将
 ```
 [HOSTNAME_AND_PATH_TO_JSAPI]
 ```
