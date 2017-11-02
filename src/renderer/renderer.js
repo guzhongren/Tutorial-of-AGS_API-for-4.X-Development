@@ -15,7 +15,7 @@ require(["esri/Map",
         let url = "https://192.168.33.44:6443/arcgis/rest/services/geocon/gs_xzqh_city_feature/FeatureServer/0";
         let cityLayer, legend, popupTemplate;
         var map = new Map({
-            basemap: "osm"
+            basemap: "dark-gray"
         });
         var view = new MapView({
             container: "viewDiv",
