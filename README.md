@@ -10,7 +10,7 @@
 
 ## 获取代码
 ```
-https://github.com/guzhongren/Tutorial-of-AGS_API-for-4.X-Development.git
+git clone https://github.com/guzhongren/Tutorial-of-AGS_API-for-4.X-Development.git
 ```
 ## 配置AGS API
 
