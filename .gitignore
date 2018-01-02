@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+libs/arcgis_js_api/
 # Runtime data
 pids
 *.pid

@@ -3,13 +3,14 @@ require([
     "esri/views/MapView",
     "esri/layers/GraphicsLayer", 
     "esri/Graphic",
+    "esri/geometry/Point",
     "esri/geometry/SpatialReference",
     "esri/symbols/SimpleMarkerSymbol",
     "esri/PopupTemplate",
     "extras/geo_project",
     "dojo/domReady!"
-], function (Map, MapView,GraphicsLayer, Graphic,SpatialReference,SimpleMarkerSymbol,PopupTemplate,Geo_project) {
-    let url = "https://192.168.33.44:6443/arcgis/rest/services/Utilities/Geometry/GeometryServer";
+], function (Map, MapView,GraphicsLayer, Graphic, Point, SpatialReference,SimpleMarkerSymbol,PopupTemplate,Geo_project) {
+    let url = "https://localhost:6443/arcgis/rest/services/Utilities/Geometry/GeometryServer";
     let outSRWkid = 4491; // CGCS2000_GK_Zone_13 投影坐标系
 
     var map = new Map({

@@ -12,7 +12,7 @@ require(["esri/Map",
     "dojo/on",
     "dojo/dom",
     "dojo/domReady!"], function (Map, MapView, MapImageLayer, FeatureLayer, SimpleFillSymbol, UniqueValueRenderer, ClassBreaksRenderer, SimpleRenderer,PopupTemplate, Legend, arrayUtil, on, dom) {
-        let url = "https://192.168.33.44:6443/arcgis/rest/services/geocon/gs_xzqh_city_feature/FeatureServer/0";
+        let url = "https://localhost:6443/arcgis/rest/services/geocon/gs_xzqh_city_feature/FeatureServer/0";
         let cityLayer, legend, popupTemplate;
         var map = new Map({
             basemap: "osm"

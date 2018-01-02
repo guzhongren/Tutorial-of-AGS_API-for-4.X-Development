@@ -15,8 +15,8 @@ require([
 ], function (Map, MapView, FeatureLayer, Geoprocessor, SimpleFillSymbol, GraphicsLayer, Graphic, Polygon, geometryEngine, FeatureSet, dom, on) {
     let inputFeature, clipFeature;
 
-    let gpUrl = "https://192.168.33.44:6443/arcgis/rest/services/geocon/clipModal/GPServer/clipModal";
-    let featureUrl = "https://192.168.33.44:6443/arcgis/rest/services/geocon/gs_xzqh_city_feature/FeatureServer/0";
+    let gpUrl = "https://localhost:6443/arcgis/rest/services/geocon/clipModal/GPServer/clipModal";
+    let featureUrl = "https://localhost:6443/arcgis/rest/services/geocon/gs_xzqh_city/FeatureServer/0";
     // 实例化GP
     let gp = new Geoprocessor(gpUrl);
 

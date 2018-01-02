@@ -12,7 +12,7 @@ require([
     "dojo/dom",
     "dojo/domReady!"
 ], function (Map, MapView, MapImageLayer, IdentifyTask, IdentifyParameters, SimpleFillSymbol, PopupTemplate, GraphicsLayer,Legend, arrayUtils, dom) {
-    let url = "https://192.168.33.44:6443/arcgis/rest/services/geocon/gs_xzqh_city/MapServer";
+    let url = "https://localhost:6443/arcgis/rest/services/geocon/gs_xzqh_city/MapServer";
     var map = new Map({
         basemap: "osm"
     });
