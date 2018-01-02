@@ -1,9 +1,14 @@
 {
+<<<<<<< HEAD
   "name": "devFolder",
+=======
+  "name": "httpServer",
+>>>>>>> 3aed92bc4bff340b147f7120df0e43c26d5921d4
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node_modules/.bin/http-server -o "
   },
@@ -21,4 +26,11 @@
   "dependencies": {
     "http-server": "^0.10.0"
   }
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+>>>>>>> 3aed92bc4bff340b147f7120df0e43c26d5921d4
 }

@@ -5,7 +5,7 @@ require([
 ], function (esriConfig,SceneView, Map, WebTileLayer) {
 
     // 代理天地图
-    esriConfig.request.proxyUrl="https://localhost/devFolder/proxy/proxy.ashx";
+    esriConfig.request.proxyUrl="https://localhost/proxy/proxy.ashx";
     esriConfig.request.corsEnabledServers.push("http://t0.tianditu.com/","http://t1.tianditu.com/","http://t2.tianditu.com/","http://t3.tianditu.com/","http://t4.tianditu.com/","http://t5.tianditu.com/","http://t6.tianditu.com/","http://t7.tianditu.com/");
     // esriConfig.request.forceProxy= true;
 
